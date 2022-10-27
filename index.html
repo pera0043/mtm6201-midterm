@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Cone Ice Cream Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-           <div>
-            <img src="images/logo.png" alt="logo">
-           </div>
-           <nav>
+            <div>
+                <img src="images/logo-98.png" alt="logo" class="logo-img">
+            </div>
+           <nav class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
@@ -22,11 +27,22 @@
                 <li><a href="#">Shop</a></li>
             </ul>
            </nav> 
-           <div>
-            <img src="images/header-1920.png" alt="header-image">
+           
+           <img 
+           srcset="images/header-480.jpg 480w,
+                   images/header-720.jpg 720w,
+                   images/header-1440.jpg 1440w"
+           sizes="(max-width: 480px) 480px,
+                 (max-width: 720px) 720px,
+                 (max-width: 1440px) 1440px"
+           src="images/header-480.jpg"
+           alt="image of ice cream cones">
+
+           <div class="overlay">
             <h1>Ice Cream Created with Fun and love</h1>
             <a href="#">Order Now</a>
            </div>
+
         </header>
         <main>
             <h3>100%</h3>

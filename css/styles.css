@@ -1,0 +1,56 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* Adding google fonts */
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Fasthand', cursive;
+}
+
+/* Adding styles to menu items and logo. Starting from mobile view so adding display block to show menu verticaly */
+.logo-img {
+    width: 70px;
+    height: 90px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.navigation .logo-img {
+    margin-left: 20px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: #BD2FD9;
+  }
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    line-height: 50px;
+    color: black;
+    font-weight: 600;
+}
+
+
