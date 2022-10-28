@@ -9,12 +9,7 @@ html{
     box-sizing: inherit;
 }
 
-.container {
-    /* max-width: 1200px; */
-    margin: 0 auto;
-}
-
-/* Adding google fonts */
+/* The font I used for the mockup is not a google font so I had to use a different font here which is a google font */
 h1 {
     font-family: 'Poppins', sans-serif;
 }
@@ -46,11 +41,284 @@ nav ul {
     text-align: left;
 }
 
-a {
+.navigation a {
     text-decoration: none;
     line-height: 50px;
     color: black;
     font-weight: 600;
 }
 
+/* Aligning header text to the image */
+.overlay {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
+  }
 
+  img {
+    max-width: 100%;
+    /* height: auto; */
+  }
+
+.order-button {
+    background-color: #84C32D;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.order-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.products h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.products h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+.icecream {
+    background-color: #F5FFE8;
+    margin-bottom: 30px;
+}
+
+.products h2 {
+    text-align: center;
+}
+
+.products i {
+    font-size: 20px;
+    color: white;
+    background-color: #BD2FD9;
+    padding: 12px;
+    border-radius: 60px;
+}
+
+.products {
+    text-align: center;
+}
+
+.icecream {
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.Sundae {
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.milkshake {
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.why {
+    background-color: #FCF4FF;
+    padding: 50px;
+}
+
+.why-choose-button {
+    background-color: #84C32D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.why-choose-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.why img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.customers {
+    padding: 50px;
+}
+
+.elijah {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.sofia {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.author {
+    font-style: italic;
+    font-weight: 600;
+    color: #BD2FD9;
+}
+
+.testimonials-button {
+    background-color: #84C32D;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.testimonials-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.newsletter input {
+    height: 100%;
+    width: 450px;
+    padding: 16px;
+    padding-left: 30px;
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid rgb(209, 209, 209);
+    background-color: white;
+}
+
+.newsletter button {
+    position: absolute;
+    width: 170px;
+    right: 80px;
+    padding: 17px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid #84C32D;
+    background-color: #84C32D;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #BD2FD9;
+    border: 2px solid #BD2FD9;
+}
+
+.subscribe {
+    background-color: #FCF4FF;
+    padding: 50px;
+    text-align: center;
+}
+
+.subscribe h1 {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.subscribe h2 {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #FCF4FF;
+    padding-top: 30px;
+}
+
+footer p {
+    text-align: center;
+    padding-left: 30px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    /* width: 30px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 70px;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    width: 70px;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    width: 70px;
+  }
+
+
+
+
+
+
+
+/* Desktop view css starts here. Adding media querie to add styles for minimum width of 760px and over */
+@media screen and (min-width:760px) {
+
+    /* body {
+        display: grid;
+        grid-template-rows: ;
+    } */
+    
+    nav li {
+        display: inline-block;
+    }
+    
+}
