@@ -47,19 +47,41 @@ nav ul {
     color: black;
     font-weight: 600;
 }
+.header-section {
+    position: relative;
+    text-align: left;
+}
 
 /* Aligning header text to the image */
 .overlay {
     position: absolute;
-    top: 65%;
-    left: 10%;
+    top: 8%;
+    left: 8%;
     /* transform: translate(-50%, -50%); */
-  }
+}
 
-  img {
+img {
     max-width: 100%;
     /* height: auto; */
-  }
+}
+
+.overlay h1{
+    margin-bottom: 0;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.overlay h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.overlay h4{
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
 
 .order-button {
     background-color: #84C32D;
@@ -69,7 +91,7 @@ nav ul {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 15px 2px;
     cursor: pointer;
     border-radius: 50px;
 }
@@ -94,7 +116,7 @@ nav ul {
 p {
     text-align: center;
     margin-top: 10px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .icecream {
@@ -256,20 +278,26 @@ p {
     padding: 0;
 }
 
+hr.solid {
+    border-top: 1px solid #bbb;
+  }
+
 footer {
     background-color: #FCF4FF;
     padding-top: 30px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 footer p {
     text-align: center;
-    padding-left: 30px;
+    padding-top: 30px;
+
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    /* width: 30px; */
+    padding: 10px;
+    font-size: 15px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -283,7 +311,7 @@ footer p {
   .fa-facebook {
     background: #3B5998;
     color: white;
-    width: 70px;
+    width: 35px;
   }
 
   .fa-twitter {
@@ -294,17 +322,14 @@ footer p {
   .fa-youtube {
     background: #bb0000;
     color: white;
-    width: 70px;
+    width: 35px;
   }
   
   .fa-instagram {
     background: #125688;
     color: white;
-    width: 70px;
+    width: 35px;
   }
-
-
-
 
 
 
@@ -312,13 +337,79 @@ footer p {
 /* Desktop view css starts here. Adding media querie to add styles for minimum width of 760px and over */
 @media screen and (min-width:760px) {
 
-    /* body {
-        display: grid;
-        grid-template-rows: ;
-    } */
-    
-    nav li {
-        display: inline-block;
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding-right: 10%; */
+        margin-left: 15px;
+        margin-right: 15px;
     }
-    
+
+    .logo-img {
+        margin-bottom: 15px;
+    }
+
+    .navigation ul li {
+        display: inline-block;
+        padding: 5px 25px;
+    }
+
+    .atags li:nth-child(5) {
+        background-color: wheat;
+        border-radius: 30px;
+    }
+
+    .atags li:nth-child(5):hover {
+        color: #3B5998;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .overlay h1 {
+        font-size: 50px;
+    }
+
+    .overlay h2 {
+        font-size: 40px;
+    }
+
+    .overlay h4 {
+        font-size: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .products-header {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .icecream {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .sundae {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .milkshake {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+
+
+
+
 }

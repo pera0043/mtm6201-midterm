@@ -22,7 +22,7 @@
             <div>
                 <img src="images/logo-98.png" alt="logo" class="logo-img">
             </div>
-            <ul>
+            <ul class="atags">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About Us</a></li>
@@ -30,7 +30,7 @@
                 <li><a href="#">Shop</a></li>
             </ul>
            </nav> 
-           
+    <div class="header-section">       
            <img 
            srcset="images/header-760.jpg 760w,
                    images/header-1440.jpg 1440w"
@@ -40,62 +40,65 @@
            alt="image of ice cream cones">
 
            <div class="overlay">
-            <h1>Ice Cream Created with Fun and love</h1>
+            <h1>Ice Cream </h1> 
+            <h2>Created with</h2>
+            <h4>Fun and love</h4>
             <div class="order-button">
                 <a href="#">Order Now</a>
             </div>
            </div>
+    </div> 
 
         </header>
         <main class="products">
-            <h3>100% Natural</h3>
-            <h1>Products</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, labore incidunt officia aperiam ut ea necessitatibus pariatur.</p>
-            <div class="icecream">
+            <div class="grid">
+                <div class="products-header">
+                    <h3>100% Natural</h3>
+                    <h1>Products</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, labore incidunt officia aperiam ut ea necessitatibus pariatur.</p>
+                </div>
+                <div class="icecream">
+                    <img 
+                    srcset="images/product1-85.png 760w,
+                            images/product1-120.png 1440w"
+                    sizes="(max-width: 760px) 760px,
+                        (max-width: 1440px) 1440px"
+                    src="images/product1-85.png"
+                    alt="icecream-cone">
 
-                <img 
-                srcset="images/product1-85.png 760w,
-                        images/product1-120.png 1440w"
-                sizes="(max-width: 760px) 760px,
-                      (max-width: 1440px) 1440px"
-                src="images/product1-85.png"
-                alt="icecream-cone">
+                    <h2>Ice Creams</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas inventore ullam facere eveniet eius similique voluptatum omnis veritatis exercitationem atque, aperiam rem asperiores, accusantium molestiae incidunt praesentium veniam illum! Ipsam.</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                
+                <div class="Sundae">
+                    <img 
+                    srcset="images/product2-85.png 760w,
+                            images/product2-120.png 1440w"
+                    sizes="(max-width: 760px) 760px,
+                        (max-width: 1440px) 1440px"
+                    src="images/product2-85.png"
+                    alt="image-of-sundae">
 
-                <h2>Ice Creams</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas inventore ullam facere eveniet eius similique voluptatum omnis veritatis exercitationem atque, aperiam rem asperiores, accusantium molestiae incidunt praesentium veniam illum! Ipsam.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
+                    <h2>Sundae</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur incidunt ex odio consectetur. Amet repudiandae debitis odio consectetur, nemo minima nam, saepe illo aliquid laborum, voluptates asperiores architecto placeat.</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             
-            <div class="Sundae">
+                <div class="milkshake">
+                    <img 
+                    srcset="images/product3-85.png 760w,
+                            images/product3-120.png 1440w"
+                    sizes="(max-width: 760px) 760px,
+                        (max-width: 1440px) 1440px"
+                    src="images/product3-85.png"
+                    alt="icecream-cone-1">
 
-                <img 
-                srcset="images/product2-85.png 760w,
-                        images/product2-120.png 1440w"
-                sizes="(max-width: 760px) 760px,
-                      (max-width: 1440px) 1440px"
-                src="images/product2-85.png"
-                alt="image-of-sundae">
-
-                <h2>Sundae</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur incidunt ex odio consectetur. Amet repudiandae debitis odio consectetur, nemo minima nam, saepe illo aliquid laborum, voluptates asperiores architecto placeat.</p>
-                <i class="fa-solid fa-arrow-right"></i>
-
+                    <h2>Milk Shake</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit, voluptates et delectus voluptate voluptatibus neque natus unde quae nostrum quia excepturi ex illum? Molestias, itaque beatae?</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
-            <div class="milkshake">
-
-                <img 
-                srcset="images/product3-85.png 760w,
-                        images/product3-120.png 1440w"
-                sizes="(max-width: 760px) 760px,
-                      (max-width: 1440px) 1440px"
-                src="images/product3-85.png"
-                alt="icecream-cone-1">
-
-                <h2>Milk Shake</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit, voluptates et delectus voluptate voluptatibus neque natus unde quae nostrum quia excepturi ex illum? Molestias, itaque beatae?</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
             <div class="why">
                 <h3>Why Choose</h3>
                 <h1>Our Ice Creams</h1>
@@ -181,6 +184,7 @@
         </div>
         <!-- adding social media icons to the footer -->
         <footer>
+            <hr class="solid">
             <p>&copy; Copyright Dream Cones Ice Cream 2022. All images are taken from <a href="https://unsplash.com/">Unsplash.</a> </p>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
