@@ -169,6 +169,66 @@ p {
     border-radius: 15px;
 }
 
+/* Adding styles to products page mobile view */
+.product-order h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.product-order h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.product-order p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid .icecream {
+    text-align: center;
+}
+
+.grid .Sundae {
+    text-align: center;
+}
+
+.grid .milkshake {
+    text-align: center;
+}
+
+.grid .yougurt {
+    text-align: center;
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.grid .popsicle {
+    text-align: center;
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.grid .donuts {
+    text-align: center;
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.grid .order-button {
+    color: white;
+}
+
 .fa-arrow-right:hover {
     background: #84C32D;
 }
@@ -323,7 +383,14 @@ footer {
 footer p {
     text-align: center;
     padding-top: 30px;
+}
+/* Adding styles to products and contact page footers by giving the footer a different class */
+.footer-line footer {
+    background-color: white;
+}
 
+.footer-line p {
+    background-color: white;
 }
 
 .fa {
@@ -444,6 +511,7 @@ footer p {
         grid-column-end: 2;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .sundae {
@@ -451,6 +519,7 @@ footer p {
         grid-column-end: 3;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .milkshake {
@@ -458,17 +527,22 @@ footer p {
         grid-column-end: 4;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .fa-arrow-right {
-        align-self: center;
-        align-items: flex-end;
+        margin-top: auto;
     }
 
     .flex {
         display: flex;
         flex-direction: column;
     }
+    /* aligning arrow icons to bottom of the flex box */
+    .grid p {
+        flex:1
+    }
+
 /* Using grid for this section to add styles accordingly */
     .why-choose {
         display: grid;
@@ -588,6 +662,9 @@ footer p {
         position: absolute;
         right: 400px;
     }
+    .hr {
+        margin-bottom: 90px;
+    }
 
     .fa {
         float: right;
@@ -610,6 +687,97 @@ footer p {
         float: left;
         background-color: #FCF4FF;
     }
+
+    /* adding styles to products page */
+    .icecream{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .flex{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+ 
+    .milkshake{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .yougurt {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #EEFFD8;
+        border-radius: 15px;
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .popsicle {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #EEFFD8;
+        border-radius: 15px;
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .donuts {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #EEFFD8;
+        border-radius: 15px;
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .product-order {
+        align-self: center;
+    }
+
+    .product-order h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .product-order h1 {
+        margin-top: 0;
+        
+    }
+    .grid  {
+        text-align: center;
+    }
+    /* aligning order button to bottom of the flex box */
+    .order-button {
+        color: white;
+        margin-top: auto;
+    }
+
+    .footer-line footer {
+        background-color: white;
+    }
+
+    .footer-line p {
+        background-color: white;
+    }
+
+
+
 
 
 
