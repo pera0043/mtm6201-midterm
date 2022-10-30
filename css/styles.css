@@ -101,6 +101,10 @@ img {
     text-decoration: none;
 }
 
+.order-button:hover {
+    background: #BD2FD9;
+}
+
 .products h1 {
     text-align: center;
     margin-top: 0;
@@ -111,6 +115,7 @@ img {
     text-align: center;
     font-size: 30px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 p {
@@ -164,9 +169,21 @@ p {
     border-radius: 15px;
 }
 
+.fa-arrow-right:hover {
+    background: #84C32D;
+}
+
 .why {
-    background-color: #FCF4FF;
     padding: 50px;
+}
+
+.tradition {
+    padding: 50px;
+}
+
+.why-choose {
+    background-color: #FCF4FF;
+    margin-bottom: 30px;
 }
 
 .why-choose-button {
@@ -188,13 +205,22 @@ p {
     text-decoration: none;
 }
 
+.why-choose-button:hover {
+    background: #BD2FD9;
+}
+
 .why img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+.tradition img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .customers {
-    padding: 50px;
+    padding: 30px 50px 0px 50px;
 }
 
 .elijah {
@@ -221,7 +247,7 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 25px 0px 45px 0px;
     cursor: pointer;
     border-radius: 50px;
 }
@@ -229,6 +255,10 @@ p {
 .testimonials-button a {
     color: white;
     text-decoration: none;
+}
+
+.testimonials-button:hover {
+    background: #BD2FD9;
 }
 
 .newsletter input {
@@ -280,6 +310,7 @@ p {
 
 hr.solid {
     border-top: 1px solid #bbb;
+    margin: 0;
   }
 
 footer {
@@ -386,7 +417,7 @@ footer p {
     .overlay h4 {
         font-size: 40px;
     }
-
+/* Using grid property to structure products section and flex property to style inside of the three columns */
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -404,6 +435,9 @@ footer p {
         grid-column-start: 1;
         grid-column-end: 7;
     }
+    .products-header h3 {
+        margin-top: 50px;
+    }
 
     .icecream {
         grid-column-start: 1;
@@ -415,6 +449,8 @@ footer p {
     .sundae {
         grid-column-start: 2;
         grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
     }
 
     .milkshake {
@@ -433,24 +469,147 @@ footer p {
         display: flex;
         flex-direction: column;
     }
+/* Using grid for this section to add styles accordingly */
+    .why-choose {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .why {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
 
+    .tradition {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
 
+/* Using float to align image and text */
+    .why-choose-img {
+        float: right;
+        padding-top: 20px;
+        margin-left: 30px;
+        width: 450px;
+    }
 
+    .why h3 {
+        text-align: center;
+    }
 
+    .why h1 {
+        text-align: center;
+    }
+
+    .why p {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .read-more {
+        float: left;
+    }
+
+    .how-its-made {
+        float: left;
+        padding-top: 20px;
+        margin-right: 30px;
+        width: 450px;
+    }
+
+    .tradition h3 {
+        text-align: center;
+    }
+
+    .tradition h1 {
+        text-align: center;
+    }
+
+    .tradition p {
+        text-align: right;
+        margin-top: 40px;
+    }
+
+    .read-more-two {
+        float: right;
+    }
+
+    .customers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        clear: both;
+    }
+
+    .customer-header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .customer-1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sofia {
+        width: 10rem;
+        align-self: center;
+        /* align-items: flex-start; */
+    }
+
+    .elijah {
+        width: 10rem;
+        align-self: center;
+        /* align-items: flex-start; */
+    }
+
+    .newsletter input {
+        height: 100%;
+        width: 600px;
+        padding: 16px;
+        padding-left: 35px;
+    }
+
+    .newsletter button {
+        position: absolute;
+        right: 400px;
+    }
+
+    .fa {
+        float: right;
+        margin-top: 15px;
+    }
 
     footer {
         padding-top: 30px;
         text-align: left;
-        padding-bottom: 20px;
+        padding-bottom: 70px;
+        padding-right: 40px;
+        background-color: #FCF4FF;
     }
     
     footer p {
         text-align: left;
         padding-top: 10px;
-    
+        padding-bottom: 25px;
+        padding-left: 40px;
+        float: left;
+        background-color: #FCF4FF;
     }
-
 
 
 
