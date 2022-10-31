@@ -25,10 +25,14 @@ h3 {
     margin-left: 40px;
     margin-top: 20px;
 }
-
-.navigation .logo-img {
-    margin-left: 20px;
+.logo {
+    text-align: center;
 }
+
+/* .navigation {
+    background-color: rgb(245, 245, 245);
+} */
+
 
 .navigation a:hover {
     text-decoration: underline;
@@ -38,7 +42,7 @@ h3 {
 nav ul {
     display: block;
     list-style-type: none;
-    text-align: left;
+    text-align: center;
 }
 
 .navigation a {
