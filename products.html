@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <!-- Adding google fonts and fontawesome to the html page -->
     <script src="https://kit.fontawesome.com/0811e053e5.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,42 +20,46 @@
             <div class="logo">
                 <img src="images/logo-98.png" alt="logo" class="logo-img">
             </div>
+             <!-- linking 3 pages to the menu -->
             <ul class="atags products-tag">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
            </nav> 
-           
     </header>
+    <!-- Adding each product to the products pages -->
     <div class="grid hr">
         <div class="products-header product-order">
             <h3>Order Now</h3>
             <h1>From a Wide Variety of Products</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
+
+        <!-- Displaying the same image in 2 different sizes for the browser and appropriate alt tags have been given to all images throughout the html code-->
         <div class="icecream">
             <img 
-            srcset="images/product1-85.png 760w,
-                    images/product1-120.png 1440w"
-            sizes="(max-width: 760px) 760px,
-                (max-width: 1440px) 1440px"
+            srcset="images/product1-85.png 85w,
+                    images/product1-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
             src="images/product1-85.png"
             alt="icecream-cone">
 
             <h2>Ice Creams</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas inventore ullam facere.</p>
+            <!-- Adding order buttons to all the products -->
             <button class="order-button" type="button">Order Now</button> 
         </div>
         
         <div class="Sundae flex">
             <img 
-            srcset="images/product2-85.png 760w,
-                    images/product2-120.png 1440w"
-            sizes="(max-width: 760px) 760px,
-                (max-width: 1440px) 1440px"
+            srcset="images/product2-85.png 85w,
+                    images/product2-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
             src="images/product2-85.png"
             alt="image-of-sundae">
 
@@ -65,10 +70,10 @@
     
         <div class="milkshake">
             <img 
-            srcset="images/product3-85.png 760w,
-                    images/product3-120.png 1440w"
-            sizes="(max-width: 760px) 760px,
-                (max-width: 1440px) 1440px"
+            srcset="images/product3-85.png 85w,
+                    images/product3-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
             src="images/product3-85.png"
             alt="icecream-cone-1">
 
@@ -79,10 +84,10 @@
     
         <div class="yougurt">
             <img 
-            srcset="images/yougurt-85.png 760w,
-                    images/yougurt-120.png 1440w"
-            sizes="(max-width: 760px) 760px,
-                (max-width: 1440px) 1440px"
+            srcset="images/yougurt-85.png 85w,
+                    images/yougurt-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
             src="images/yougurt-85.png"
             alt="frozen-yougurt">
 
@@ -93,10 +98,10 @@
 
         <div class="popsicle">
             <img 
-            srcset="images/popsicle-85.png 760w,
-                    images/popsicle-120.png 1440w"
-            sizes="(max-width: 760px) 760px,
-                (max-width: 1440px) 1440px"
+            srcset="images/popsicle-85.png 85w,
+                    images/popsicle-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
             src="images/popsicle-85.png"
             alt="popsicle-image">
 
@@ -107,10 +112,10 @@
 
         <div class="donuts">
             <img 
-            srcset="images/donuts-85.png 760w,
-                    images/donuts-120.png 1440w"
-            sizes="(max-width: 760px) 760px,
-                (max-width: 1440px) 1440px"
+            srcset="images/donuts-85.png 85w,
+                    images/donuts-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
             src="images/donuts-85.png"
             alt="donuts-image">
 
@@ -119,7 +124,8 @@
             <button class="order-button" type="button">Order Now</button> 
         </div>
     </div> 
-    
+
+    <!-- Adding class of footer-line to remove styles added to the home page footer and add separate styles to products page footer-->
     <hr class="solid">
     <div class="footer-line">
         <footer>

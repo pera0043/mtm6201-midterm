@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://kit.fontawesome.com/0811e053e5.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navigation">            
+            <div class="logo">
+                <img src="images/logo-98.png" alt="logo" class="logo-img">
+            </div>
+            <!-- linking 3 pages to the menu -->
+            <ul class="atags products-tag">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+           </nav>
+
+           <div class="products-header product-order">
+            <h3>Get in Touch</h3>
+            <h1>General Inquiries.</h1>
+            <p>We would love to hear about your experience.</p>
+
+            <!-- Adding a form to the contact section -->
+            <div class="form">
+                <form action="contact.html" method="get">
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your Name">
+                    </div>
+            
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your Email">
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write Something"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="more-info">
+            <div class="address">
+                <h2>Address</h2>
+                <p>1216 Bank Street, Ottawa, Ontario</p>
+            </div>
+            <div class="hours">
+                <h2>Hours</h2>
+                <p>Tuesday - Sunday : 11am - 8pm</p>
+                <p> Mondays - Closed</p> 
+            </div>
+            <div class="phone">
+                <h2>Contact</h2>
+                <p> 613.688.2011</p>
+                <p> info@dreamcone.com</p> 
+            </div>
+        </div>
+        
+        <!-- Adding class of footer-line to remove styles added to the home page footer and add separate styles to products page footer-->
+        <hr class="solid">
+        <div class="footer-line">
+            <footer>
+                <p>&copy; Copyright Dream Cones Ice Cream 2022. All images are taken from <a href="https://unsplash.com/">Unsplash.</a> </p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </footer> 
+        </div>
+           
+    </header>

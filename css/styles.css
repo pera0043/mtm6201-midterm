@@ -29,13 +29,7 @@ h3 {
     text-align: center;
 }
 
-/* .navigation {
-    background-color: rgb(245, 245, 245);
-} */
-
-
 .navigation a:hover {
-    text-decoration: underline;
     color: #BD2FD9;
   }
 
@@ -45,11 +39,22 @@ nav ul {
     text-align: center;
 }
 
+/* Adding menu a shadow and padding to the 5th child of the list*/
+/* nav li:nth-child(5){
+   padding-bottom: 25px;
+} */
+
+/* .navigation {
+    box-shadow: 0 5px 6px -6px #999;
+} */
+
 .navigation a {
     text-decoration: none;
     line-height: 50px;
     color: black;
     font-weight: 600;
+    
+    
 }
 .header-section {
     position: relative;
@@ -375,11 +380,11 @@ p {
 hr.solid {
     border-top: 1px solid #bbb;
     margin: 0;
-  }
+}
 
 footer {
     background-color: #FCF4FF;
-    padding-top: 30px;
+    padding-top: 15px;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -397,6 +402,7 @@ footer p {
     background-color: white;
 }
 
+/* styling social media icons on the footer */
 .fa {
     padding: 10px;
     font-size: 15px;
@@ -404,52 +410,113 @@ footer p {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-  }
+}
   
-  .fa:hover {
-      opacity: 0.7;
-  }
+.fa:hover {
+    opacity: 0.7;
+}
   
-  .fa-facebook {
+.fa-facebook {
     background: #3B5998;
     color: white;
     width: 35px;
-  }
+}
 
-  .fa-twitter {
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }
+}
 
-  .fa-youtube {
+.fa-youtube {
     background: #bb0000;
     color: white;
     width: 35px;
-  }
+}
   
-  .fa-instagram {
+.fa-instagram {
     background: #125688;
     color: white;
     width: 35px;
-  }
+}
+
+/* adding styles to the form input, textarea and button in contact page,  */
+.form input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    box-sizing:border-box;
+    line-height: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family:'Poppins', sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    box-sizing:border-box;
+    margin-top: 12px;
+    resize: vertical;
+    font-family:'Poppins', sans-serif;
+}
+    
+input[type=submit] {
+    background-color: #84C32D;
+    font-size: 16px;
+    margin: 15px 2px 40px 0px;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family:'Poppins', sans-serif;
+}
+
+input[type=submit]:hover {
+    background: #BD2FD9;
+}
+
+.form {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Adding styles to contact page more info section */
+.more-info h2 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.more-info p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.phone {
+    margin-bottom: 35px;
+}
 
 
+/* ---------------------------------------------------------------------------------------------
+Desktop view css starts here. Adding media querie to add styles for minimum width of 760px and over */
 
-
-/* Desktop view css starts here. Adding media querie to add styles for minimum width of 760px and over */
 @media screen and (min-width:760px) {
 
     .navigation .logo-img {
-        margin-left: 50px;
+        margin-left: 70px;
+    }
+    .atags {
+        margin-right: 40px;
     }
 
+    /* Adding styles to navigation and giving it a box shadow when directed to products and contact page */
     .navigation {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-left: 15px;
-        margin-right: 70px;
         flex-wrap: wrap;
+        box-shadow: 0 5px 6px -6px #999;
     }
 
     .logo-img {
@@ -460,21 +527,17 @@ footer p {
         display: inline-block;
         padding: 5px 25px;
     }
-
-    .atags li:nth-child(5) {
+    /* Adding styles to button active state */
+    .active {
         background-color: wheat;
         border-radius: 30px;
-    }
-
-    .atags li:nth-child(5):hover {
-        color: #3B5998;
+        padding: 15px 25px 15px 25px;
     }
 
     .overlay {
         position: absolute;
         top: 20%;
         left: 10%;
-        /* transform: translate(-50%, -50%); */
     }
 
     .overlay h1 {
@@ -488,6 +551,7 @@ footer p {
     .overlay h4 {
         font-size: 40px;
     }
+
 /* Using grid property to structure products section and flex property to style inside of the three columns */
     .grid {
         display: grid;
@@ -542,12 +606,13 @@ footer p {
         display: flex;
         flex-direction: column;
     }
+
     /* aligning arrow icons to bottom of the flex box */
     .grid p {
         flex:1
     }
 
-/* Using grid for this section to add styles accordingly */
+    /* Using grid for this section to add styles accordingly */
     .why-choose {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -616,6 +681,7 @@ footer p {
         float: right;
     }
 
+    /* Using grid property for the section structure and flex to the inside of the section to align content and images */
     .customers {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -646,15 +712,14 @@ footer p {
     .sofia {
         width: 10rem;
         align-self: center;
-        /* align-items: flex-start; */
     }
 
     .elijah {
         width: 10rem;
         align-self: center;
-        /* align-items: flex-start; */
     }
 
+    /* Adding styles to newsletter input field */
     .newsletter input {
         height: 100%;
         width: 600px;
@@ -662,6 +727,7 @@ footer p {
         padding-left: 35px;
     }
 
+    /* Adding styles and positioning the newsletter button */
     .newsletter button {
         position: absolute;
         right: 400px;
@@ -670,6 +736,7 @@ footer p {
         margin-bottom: 90px;
     }
 
+     /* using float left and right to align the social media icons and p tag on footer */
     .fa {
         float: right;
         margin-top: 15px;
@@ -692,7 +759,7 @@ footer p {
         background-color: #FCF4FF;
     }
 
-    /* adding styles to products page */
+    /* adding styles to products page items. using grid for the structure and flex inside the boxes to align the content inside*/
     .icecream{
         align-items: center;
         flex-wrap: wrap;
@@ -779,6 +846,19 @@ footer p {
     .footer-line p {
         background-color: white;
     }
+
+    .form {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    input[type=submit] {
+        margin: 30px 2px 40px 0px;
+       
+    }
+
+    /* Adding styles to contact page more info section */
+
 
 
 

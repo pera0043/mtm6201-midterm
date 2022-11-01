@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Cone Ice Cream Shop</title>
 
+    <!-- Adding google fonts and fontawesome to the html page -->
     <script src="https://kit.fontawesome.com/0811e053e5.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,17 @@
             <div class="logo">
                 <img src="images/logo-98.png" alt="logo" class="logo-img">
             </div>
+            <!-- linking 3 pages to the menu -->
             <ul class="atags">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
            </nav> 
+        </header>  
+        <!-- Adding img srcset to header image. by this im displaying the same image in 2 different sizes for the browser to choose -->
         <div class="header-section">       
             <img 
             srcset="images/header-760.jpg 760w,
@@ -38,6 +42,7 @@
             src="images/header-760.jpg"
             alt="image of ice cream cones">
 
+            <!-- giving a class of overlay to the header text so i can add css styles to the text and align text on top of the image -->
             <div class="overlay">
                 <h1>Ice Cream </h1> 
                 <h2>Created with</h2>
@@ -48,7 +53,6 @@
             </div>
         </div> 
 
-        </header>
         <main class="products">
             <div class="grid">
                 <div class="products-header">
@@ -56,26 +60,29 @@
                     <h1>Products</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, labore incidunt officia aperiam ut ea necessitatibus pariatur.</p>
                 </div>
+                <!-- Displaying the same image in 2 different sizes for the browser -->
                 <div class="icecream">
                     <img 
-                    srcset="images/product1-85.png 760w,
-                            images/product1-120.png 1440w"
-                    sizes="(max-width: 760px) 760px,
-                        (max-width: 1440px) 1440px"
+                    srcset="images/product1-85.png 85w,
+                            images/product1-120.png 120w"
+                    sizes="(max-width: 760px) 85px,
+                        (max-width: 1440px) 120px"
                     src="images/product1-85.png"
                     alt="icecream-cone">
 
+                    <!-- I used lorem ipsum text for all p tags throughout the webpage because that is how i have done the mockup page in semester 1 but i have added real text for all other areas -->
                     <h2>Ice Creams</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas inventore ullam facere eveniet eius similique voluptatum omnis veritatis exercitationem atque, aperiam rem asperiores, accusantium molestiae incidunt.</p>
+                    <!-- Adding arrow icon from font awesome -->
                     <a href="#"><i class="fa-solid fa-arrow-right"></i></a>  
                 </div>
                 
                 <div class="Sundae flex">
                     <img 
-                    srcset="images/product2-85.png 760w,
-                            images/product2-120.png 1440w"
-                    sizes="(max-width: 760px) 760px,
-                        (max-width: 1440px) 1440px"
+                    srcset="images/product2-85.png 85w,
+                            images/product2-120.png 120w"
+                    sizes="(max-width: 760px) 85px,
+                        (max-width: 1440px) 120px"
                     src="images/product2-85.png"
                     alt="image-of-sundae">
 
@@ -85,11 +92,12 @@
                 </div>
             
                 <div class="milkshake">
+                    <!-- Displaying the same image in 2 different sizes for the browser and appropriate alt tags have been given to all images throughout the html code-->
                     <img 
-                    srcset="images/product3-85.png 760w,
-                            images/product3-120.png 1440w"
-                    sizes="(max-width: 760px) 760px,
-                        (max-width: 1440px) 1440px"
+                    srcset="images/product3-85.png 85w,
+                            images/product3-120.png 120w"
+                    sizes="(max-width: 760px) 85px,
+                        (max-width: 1440px) 120px"
                     src="images/product3-85.png"
                     alt="icecream-cone-1">
 
@@ -100,14 +108,15 @@
             </div>
             <div class="why-choose"> 
                 <div class="why">
+                    <!-- h3 and h1 tags have been given to differentiate the heading font and sizes -->
                     <h3>Why Choose</h3>
                     <h1>Our Ice Creams</h1>
 
                     <img class="why-choose-img"
-                    srcset="images/why-choose1-300.jpg 760w,
-                            images/why-choose1-600.jpg 1440w"
-                    sizes="(max-width: 760px) 760px,
-                        (max-width: 1440px) 1440px"
+                    srcset="images/why-choose1-300.jpg 300w,
+                            images/why-choose1-600.jpg 600w"
+                    sizes="(max-width: 760px) 300px,
+                        (max-width: 1440px) 600px"
                     src="images/why-choose1-300.jpg"
                     alt="why-choose-image">
 
@@ -121,15 +130,16 @@
                     <h1>How It's Made</h1>
 
                     <img class="how-its-made"
-                    srcset="images/why-choose2-300.jpg 760w,
-                            images/why-choose2-600.jpg 1440w"
-                    sizes="(max-width: 760px) 760px,
-                        (max-width: 1440px) 1440px"
+                    srcset="images/why-choose2-300.jpg 300w,
+                            images/why-choose2-600.jpg 600w"
+                    sizes="(max-width: 760px) 300px,
+                        (max-width: 1440px) 600px"
                     src="images/why-choose2-300.jpg"
                     alt="how-its-made">
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nesciunt ab libero expedita accusantium nam minima, qui hic illo eaque dicta eum minus aperiam eveniet in illum amet molestias tempora.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae ex necessitatibus nobis consectetur esse soluta, numquam similique, tempore praesentium. </p>
+                    <!-- Adding buttons with links to the page -->
                     <a href="#" class="why-choose-button read-more-two">Read More</a>
                 </div>
             </div>
@@ -142,13 +152,14 @@
                 </div>
                 <div class="customer-1"> 
                     <img class="sofia"
-                    srcset="images/sofia-100.png 760w,
-                            images/sofia-200.png 1440w"
-                    sizes="(max-width: 760px) 760px,
-                        (max-width: 1440px) 1440px"
+                    srcset="images/sofia-100.png 100w,
+                            images/sofia-200.png 200w"
+                    sizes="(max-width: 760px) 100px,
+                        (max-width: 1440px) 200px"
                     src="images/sofia-100.png"
                     alt="image-of-sofia">
 
+                    <!-- Adding quote for the testimonial section -->
                     <div>
                         <q>My favorite ice cream shop. Always new flavors, interesting combinations of ice creams and sorbet to try.</q>
                         <p class="author">- Sofia Morgan -</p>
@@ -157,10 +168,10 @@
 
                 <div class="customer-2">
                     <img class="elijah"
-                    srcset="images/elijah-100.png 760w,
-                            images/elijah-200.png 1440w"
-                    sizes="(max-width: 760px) 760px,
-                        (max-width: 1440px) 1440px"
+                    srcset="images/elijah-100.png 100w,
+                            images/elijah-200.png 200w"
+                    sizes="(max-width: 760px) 100px,
+                        (max-width: 1440px) 200px"
                     src="images/elijah-100.png"
                     alt="image-of-elijah">
 
@@ -176,6 +187,7 @@
             </div>
         </main>
 
+        <!-- Adding input text so user can subscribe to the newsletter section -->
         <div class="subscribe">
             <h2>Join our community</h2>
             <h1>Subscribe to our newsletter</h1>
@@ -185,7 +197,7 @@
             <button type="submit">Subscribe</button>
         </section>
         </div>
-        <!-- adding social media icons to the footer -->
+        <!-- adding copyright, social media icons to the footer and giving credits to unsplash for providing webpage images -->
         <hr class="solid">
         <footer>
             <p>&copy; Copyright Dream Cones Ice Cream 2022. All images are taken from <a href="https://unsplash.com/">Unsplash.</a> </p>
