@@ -20,7 +20,6 @@ h3 {
 
 /* Adding styles to menu items and logo. Starting from mobile view so adding display block to show menu verticaly */
 .logo-img {
-    /* width: 70px; */
     height: 90px;
     margin-left: 40px;
     margin-top: 20px;
@@ -29,6 +28,7 @@ h3 {
     text-align: center;
 }
 
+/* giving a tags a hover style*/
 .navigation a:hover {
     color: #BD2FD9;
   }
@@ -39,11 +39,6 @@ nav ul {
     text-align: center;
 }
 
-/* Adding menu a shadow and padding to the 5th child of the list*/
-/* nav li:nth-child(5){
-   padding-bottom: 25px;
-} */
-
 /* .navigation {
     box-shadow: 0 5px 6px -6px #999;
 } */
@@ -53,9 +48,8 @@ nav ul {
     line-height: 50px;
     color: black;
     font-weight: 600;
-    
-    
 }
+
 .header-section {
     position: relative;
     text-align: left;
@@ -102,7 +96,10 @@ img {
     font-size: 16px;
     margin: 15px 2px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 50px; 
+
+    /* Giving button a transition to make the animation smooth */
+    /* transition: 0.5s; */
 }
 
 .order-button a {
@@ -110,6 +107,7 @@ img {
     text-decoration: none;
 }
 
+/* Giving the order button an animation of scale */
 .order-button:hover {
     background: #BD2FD9;
 }
@@ -238,8 +236,14 @@ p {
     color: white;
 }
 
+/* Adding animation to products buttons*/
+.fa-arrow-right {
+    transition: 0.5s;
+}
+
 .fa-arrow-right:hover {
     background: #84C32D;
+    transform: scale(1.1);
 }
 
 .why {
@@ -267,6 +271,8 @@ p {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
+     /* Giving button a transition to make the animation smooth */
+    transition: 0.5s;
 }
 
 .why-choose-button a {
@@ -274,8 +280,10 @@ p {
     text-decoration: none;
 }
 
+/* Adding animation to why choose section buttons*/
 .why-choose-button:hover {
     background: #BD2FD9;
+    transform: scale(1.1);
 }
 
 .why img {
@@ -319,6 +327,7 @@ p {
     margin: 25px 0px 45px 0px;
     cursor: pointer;
     border-radius: 50px;
+    transition: 0.5s;
 }
 
 .testimonials-button a {
@@ -326,8 +335,10 @@ p {
     text-decoration: none;
 }
 
+/* Adding animation to testimonials section button*/
 .testimonials-button:hover {
     background: #BD2FD9;
+    transform: scale(1.1); 
 }
 
 .newsletter input {
@@ -470,10 +481,12 @@ input[type=submit] {
     border-radius: 50px;
     cursor: pointer;
     font-family:'Poppins', sans-serif;
+    transition: 0.5s;
 }
 
 input[type=submit]:hover {
     background: #BD2FD9;
+    transform: scale(1.1);
 }
 
 .form {
@@ -482,10 +495,32 @@ input[type=submit]:hover {
 }
 
 /* Adding styles to contact page more info section */
+.more-info {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .more-info h2 {
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 25px;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.more-info ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.address {
+    background-color: #FCF4FF;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 35px;
+}
+.hours {
+    background-color: #FCF4FF;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 35px;
 }
 
 .more-info p {
@@ -495,6 +530,36 @@ input[type=submit]:hover {
 
 .phone {
     margin-bottom: 35px;
+    background-color: #FCF4FF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* adding styles to skip links and hiding it from the page */
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+/* Adding animation to buttons in produts page */
+.order {
+    transition: 0.5s;
+}
+
+.order:hover {
+    transform: scale(1.1); 
 }
 
 
@@ -532,6 +597,10 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         background-color: wheat;
         border-radius: 30px;
         padding: 15px 25px 15px 25px;
+    }
+
+    .overlay .order-button {
+        margin-top: 25px;
     }
 
     .overlay {
@@ -857,7 +926,52 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
        
     }
 
-    /* Adding styles to contact page more info section */
+    /* using grid to display content in one line in the contact page more info section */
+    .more-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0px 200px 50px 200px;
+        gap: 15px;
+    }
+    .more-info p {
+        margin-top: 0;
+    }
+    .more-info h2 {
+        margin-bottom: 7px;
+    }
+
+    .more-info ul li {
+        padding-left: 0;
+    }
+
+    .phone {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 25px 25px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .address {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 25px 25px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .hours {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 25px 25px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
 
 
 

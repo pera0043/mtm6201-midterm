@@ -17,18 +17,25 @@
 </head>
 <body>
     <div class="container">
+        <!-- Adding skip links to home page -->
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to Home</a></li>
+            <li><a href="#items">Skip to products</a></li>
+            <li><a href="#clients">Skip to testimonials</a></li>
+          </ul>
+
         <header>
-           <nav class="navigation">            
+           <nav class="navigation" id="nav"> <!-- giving an id to this section to add a skip links -->    
             <div class="logo">
                 <img src="images/logo-98.png" alt="logo" class="logo-img">
             </div>
-            <!-- linking 3 pages to the menu -->
+            <!-- linking 3 pages to the menu and Adding aria labels to menu-->
             <ul class="atags">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="index.html" class="active" aria-label="Press for home page">Home</a></li>
+                <li><a href="products.html" aria-label="Press for products page">Products</a></li>
+                <li><a href="#" aria-label="Press for aboutus page">About Us</a></li>
+                <li><a href="contact.html" aria-label="Press for contact page">Contact</a></li>
+                <li><a href="#" aria-label="Press for shop page">Shop</a></li>
             </ul>
            </nav> 
         </header>  
@@ -53,7 +60,7 @@
             </div>
         </div> 
 
-        <main class="products">
+        <main class="products" id="items"> <!-- giving an id to this section to add a skip link --> 
             <div class="grid">
                 <div class="products-header">
                     <h3>100% Natural</h3>
@@ -144,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="customers">
+            <div class="customers" id="clients"> <!-- giving an id to this section to add a skip link --> 
                 <div class="customer-header">
                     <h3>What our</h3>
                     <h1>Customers Say</h1>
