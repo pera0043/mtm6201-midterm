@@ -9,6 +9,10 @@ html{
     box-sizing: inherit;
 }
 
+body {
+    margin: 0;
+}
+
 /* The font I used for the mockup is not a google font so I had to use a different font here which is a google font */
 h1 {
     font-family: 'Poppins', sans-serif;
@@ -22,7 +26,7 @@ h3 {
 .logo-img {
     height: 90px;
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .logo {
     text-align: center;
@@ -39,9 +43,11 @@ nav ul {
     text-align: center;
 }
 
-/* .navigation {
+/* adding a shadow to the navigation of the products and contact page to display it separately */
+.shadow {
     box-shadow: 0 5px 6px -6px #999;
-} */
+    padding-bottom: 12px;
+}
 
 .navigation a {
     text-decoration: none;
@@ -60,12 +66,10 @@ nav ul {
     position: absolute;
     top: 8%;
     left: 8%;
-    /* transform: translate(-50%, -50%); */
 }
 
 img {
     max-width: 100%;
-    /* height: auto; */
 }
 
 .overlay h1{
@@ -86,6 +90,7 @@ img {
     margin-bottom: 0;
 }
 
+/* Adding styles to order button */
 .order-button {
     background-color: #84C32D;
     border: none;
@@ -97,9 +102,6 @@ img {
     margin: 15px 2px;
     cursor: pointer;
     border-radius: 50px; 
-
-    /* Giving button a transition to make the animation smooth */
-    /* transition: 0.5s; */
 }
 
 .order-button a {
@@ -107,9 +109,43 @@ img {
     text-decoration: none;
 }
 
-/* Giving the order button an animation of scale */
 .order-button:hover {
     background: #BD2FD9;
+}
+
+/* Adding animation to the header button using animation property*/
+@keyframes order-button {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.order-button {
+    animation-name: order-button;
+    animation-duration: 2s;
+}
+
+/* Styling buttons in the products page*/
+.order:hover {
+    background: #BD2FD9;
+}
+
+.order {
+    background-color: #84C32D;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 50px; 
 }
 
 .products h1 {
@@ -128,7 +164,6 @@ img {
 p {
     text-align: center;
     margin-top: 10px;
-    /* padding-bottom: 30px; */
 }
 
 .icecream {
@@ -157,7 +192,8 @@ p {
     margin: 10px;
     margin-bottom: 30px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 30px;
+    text-align: center;
 }
 
 .Sundae {
@@ -165,7 +201,8 @@ p {
     margin: 10px;
     margin-bottom: 30px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 30px;
+    text-align: center;
 }
 
 .milkshake {
@@ -173,7 +210,35 @@ p {
     margin: 10px;
     margin-bottom: 30px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.ice-sandwich {
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.ice-cake {
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.macaroons {
+    background-color: #EEFFD8;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
 }
 
 /* Adding styles to products page mobile view */
@@ -193,25 +258,13 @@ p {
     margin-bottom: 40px;
 }
 
-.grid .icecream {
-    text-align: center;
-}
-
-.grid .Sundae {
-    text-align: center;
-}
-
-.grid .milkshake {
-    text-align: center;
-}
-
 .grid .yougurt {
     text-align: center;
     background-color: #EEFFD8;
     margin: 10px;
     margin-bottom: 30px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 .grid .popsicle {
@@ -220,7 +273,7 @@ p {
     margin: 10px;
     margin-bottom: 30px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 .grid .donuts {
@@ -229,7 +282,7 @@ p {
     margin: 10px;
     margin-bottom: 30px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 .grid .order-button {
@@ -585,13 +638,18 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     }
 
     .logo-img {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 
     .navigation ul li {
         display: inline-block;
         padding: 5px 25px;
     }
+
+    .shadow {
+        padding-bottom: 0;
+    }
+
     /* Adding styles to button active state */
     .active {
         background-color: wheat;
@@ -812,7 +870,6 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     }
 
     footer {
-        padding-top: 30px;
         text-align: left;
         padding-bottom: 70px;
         padding-right: 40px;
@@ -822,13 +879,12 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     footer p {
         text-align: left;
         padding-top: 10px;
-        padding-bottom: 25px;
         padding-left: 40px;
         float: left;
         background-color: #FCF4FF;
     }
 
-    /* adding styles to products page items. using grid for the structure and flex inside the boxes to align the content inside*/
+    /* adding styles to products page items. using grid for the structure and flex inside the boxes to align the content inside */
     .icecream{
         align-items: center;
         flex-wrap: wrap;
@@ -851,7 +907,7 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         flex-direction: column;
         flex-wrap: wrap;
         background-color: #EEFFD8;
-        border-radius: 15px;
+        border-radius: 30px;
         margin: 10px;
         margin-bottom: 30px;
         padding: 50px;
@@ -865,7 +921,7 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         flex-direction: column;
         flex-wrap: wrap;
         background-color: #EEFFD8;
-        border-radius: 15px;
+        border-radius: 30px;
         margin: 10px;
         margin-bottom: 30px;
         padding: 50px;
@@ -879,7 +935,48 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         flex-direction: column;
         flex-wrap: wrap;
         background-color: #EEFFD8;
-        border-radius: 15px;
+        border-radius: 30px;
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .ice-sandwich {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #EEFFD8;
+        border-radius: 30px;
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .ice-cake {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #EEFFD8;
+        border-radius: 30px;
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 50px;
+        align-items: center;
+    }
+    .macaroons {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #EEFFD8;
+        border-radius: 30px;
         margin: 10px;
         margin-bottom: 30px;
         padding: 50px;
@@ -969,15 +1066,7 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
     }
-
-
-
-
-
-
-
 
 
 }

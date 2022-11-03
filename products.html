@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <nav class="navigation">            
+        <nav class="navigation shadow">            
             <div class="logo">
                 <img src="images/logo-98.png" alt="logo" class="logo-img">
             </div>
@@ -51,7 +51,7 @@
             <h2>Ice Creams</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas inventore ullam facere.</p>
             <!-- Adding aria roles to all add to cart buttons -->
-            <button class="order-button order" aria-label="Add icecream to your cart" type="button">Add to Cart</button> 
+            <button class="order" aria-label="Add icecream to your cart" type="button">Add to Cart</button> 
         </div>
         
         <div class="Sundae flex">
@@ -65,7 +65,7 @@
 
             <h2>Sundae</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur incidunt.</p>
-            <button class="order-button order" aria-label="Add sundae to your cart" type="button">Add to Cart</button> 
+            <button class="order" aria-label="Add sundae to your cart" type="button">Add to Cart</button> 
         </div>
     
         <div class="milkshake">
@@ -79,7 +79,7 @@
 
             <h2>Milk Shake</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
-            <button class="order-button order" aria-label="Add milkshake to your cart" type="button">Add to Cart</button> 
+            <button class="order" aria-label="Add milkshake to your cart" type="button">Add to Cart</button> 
         </div>
     
         <div class="yougurt">
@@ -93,7 +93,7 @@
 
             <h2>Frozen Yougurt</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
-            <button class="order-button order" aria-label="Add frozen yougurt to your cart" type="button">Add to Cart</button>  
+            <button class="order" aria-label="Add frozen yougurt to your cart" type="button">Add to Cart</button>  
         </div>  
 
         <div class="popsicle">
@@ -107,7 +107,7 @@
 
             <h2>Popsicles</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
-            <button class="order-button order" aria-label="Add donuts to your cart" type="button">Add to Cart</button>  
+            <button class="order" aria-label="Add donuts to your cart" type="button">Add to Cart</button>  
         </div>  
 
         <div class="donuts">
@@ -121,7 +121,49 @@
 
             <h2>Donuts</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
-            <button class="order-button order" type="button">Add to Cart</button>  
+            <button class="order" type="button">Add to Cart</button>  
+        </div>
+
+        <div class="ice-sandwich">
+            <img 
+            srcset="images/icecream-sandwich-85.png 85w,
+                    images/icecream-sandwich-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
+            src="images/icecream-sandwich-85.png"
+            alt="icecream-sandwich-image">
+
+            <h2>Ice Cream Sandwich</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
+            <button class="order" type="button">Add to Cart</button>  
+        </div>
+
+        <div class="ice-cake">
+            <img 
+            srcset="images/icecream-cake-85.png 85w,
+                    images/icecream-cake-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
+            src="images/icecream-cake-85.png"
+            alt="icecream-cake-image">
+
+            <h2>Ice Cream Cake</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
+            <button class="order" type="button">Add to Cart</button>  
+        </div>
+
+        <div class="macaroons">
+            <img 
+            srcset="images/macaroons-85.png 85w,
+                    images/macaroons-120.png 120w"
+            sizes="(max-width: 760px) 85px,
+                (max-width: 1440px) 120px"
+            src="images/macaroons-85.png"
+            alt="macaroons-image">
+
+            <h2>Macaroons</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
+            <button class="order" type="button">Add to Cart</button>  
         </div>
     </div> 
 
