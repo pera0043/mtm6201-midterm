@@ -175,6 +175,7 @@ p {
     text-align: center;
 }
 
+/* Styling products and i tags. */
 .products i {
     font-size: 20px;
     color: white;
@@ -405,7 +406,7 @@ p {
     border: 2px solid rgb(209, 209, 209);
     background-color: white;
 }
-
+/* Adding styles to the newsletter subscribe button */
 .newsletter button {
     position: absolute;
     width: 170px;
@@ -616,17 +617,11 @@ input[type=submit]:hover {
 }
 
 
+
 /* ---------------------------------------------------------------------------------------------
 Desktop view css starts here. Adding media querie to add styles for minimum width of 760px and over */
 
 @media screen and (min-width:760px) {
-
-    .navigation .logo-img {
-        margin-left: 70px;
-    }
-    .atags {
-        margin-right: 40px;
-    }
 
     /* Adding styles to navigation and giving it a box shadow when directed to products and contact page */
     .navigation {
@@ -683,8 +678,26 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 100px;
-        margin-right: 100px;
+    }
+
+    /* adding a margin of 90px from both sides for the webpage */
+    .wrapper {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    /* Adding styles for home page footer class */
+    .bottom {
+        padding-left: 90px;
+        padding-right: 90px;
+        background-color: #FCF4FF;
+    }
+
+    /* Adding separate styles for footer class in products and contact page */
+    .bottom-inner {
+        padding-left: 90px;
+        padding-right: 90px;
+        background-color: #FFFFFF;
     }
 
     .grid img {
@@ -748,15 +761,11 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     .why {
         grid-column-start: 1;
         grid-column-end: 3;
-        margin-left: 80px;
-        margin-right: 80px;
     }
 
     .tradition {
         grid-column-start: 1;
         grid-column-end: 4;
-        margin-left: 80px;
-        margin-right: 80px;
     }
 
 /* Using float to align image and text */
@@ -864,22 +873,20 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     }
 
      /* using float left and right to align the social media icons and p tag on footer */
-    .fa {
+
+    .social-icons {
         float: right;
-        margin-top: 15px;
+        padding-top: 7px;
+        padding-bottom: 10px;
     }
 
     footer {
-        text-align: left;
         padding-bottom: 70px;
         padding-right: 40px;
-        background-color: #FCF4FF;
     }
     
     footer p {
-        text-align: left;
         padding-top: 10px;
-        padding-left: 40px;
         float: left;
         background-color: #FCF4FF;
     }
@@ -1013,11 +1020,6 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         background-color: white;
     }
 
-    .form {
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-
     input[type=submit] {
         margin: 30px 2px 40px 0px;
        
@@ -1027,7 +1029,7 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     .more-info {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 0px 200px 50px 200px;
+        margin: 0px 130px 50px 130px;
         gap: 15px;
     }
     .more-info p {

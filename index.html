@@ -26,11 +26,11 @@
 
         <header>
            <nav class="navigation" id="nav"> <!-- giving an id to this section to add a skip links -->    
-            <div class="logo">
+            <div class="logo wrapper">
                 <img src="images/logo-98.png" alt="logo" class="logo-img">
             </div>
             <!-- linking 3 pages to the menu and Adding aria labels to menu-->
-            <ul class="atags">
+            <ul class="atags wrapper">
                 <li><a href="index.html" class="active" aria-label="Press for home page">Home</a></li>
                 <li><a href="products.html" aria-label="Press for products page">Products</a></li>
                 <li><a href="#" aria-label="Press for aboutus page">About Us</a></li>
@@ -61,7 +61,7 @@
         </div> 
 
         <main class="products" id="items"> <!-- giving an id to this section to add a skip link --> 
-            <div class="grid">
+            <div class="grid wrapper">
                 <div class="products-header">
                     <h3>100% Natural</h3>
                     <h1>Products</h1>
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="why-choose"> 
-                <div class="why">
+                <div class="why wrapper">
                     <!-- h3 and h1 tags have been given to differentiate the heading font and sizes -->
                     <h3>Why Choose</h3>
                     <h1>Our Ice Creams</h1>
@@ -131,8 +131,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit eum doloribus commodi harum voluptates. Laboriosam ea itaque nemo ex corrupti unde nam consequuntur sunt eaque.</p>
                     <a href="#" class="why-choose-button read-more">Read More</a>
                 </div>
-
-                <div class="tradition">
+                <!-- Adding a class of wrapper throughout the page to give the webpage a static space from both sides. -->
+                <div class="tradition wrapper">
                     <h3>Tradition and Love</h3>
                     <h1>How It's Made</h1>
 
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="customers" id="clients"> <!-- giving an id to this section to add a skip link --> 
+            <div class="customers wrapper" id="clients"> <!-- giving an id to this section to add a skip link --> 
                 <div class="customer-header">
                     <h3>What our</h3>
                     <h1>Customers Say</h1>
@@ -199,20 +199,24 @@
             <h2>Join our community</h2>
             <h1>Subscribe to our newsletter</h1>
 
-        <section class="newsletter">
+        <section class="newsletter wrapper">
             <input type="text" placeholder="Enter email address" name="mail">
             <button type="submit">Subscribe</button>
         </section>
         </div>
         <!-- adding copyright, social media icons to the footer and giving credits to unsplash for providing webpage images -->
         <hr class="solid">
-        <footer>
-            <p>&copy; Copyright Dream Cones Ice Cream 2022. All images are taken from <a href="https://unsplash.com/">Unsplash.</a> </p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </footer>
+        <div class="bottom">
+            <footer>
+                <p>&copy; Copyright Dream Cones Ice Cream 2022. All images are taken from <a href="https://unsplash.com/">Unsplash.</a> </p>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

@@ -16,12 +16,13 @@
 </head>
 <body>
     <header>
+        <!-- Adding a class of shadow to the navigation to display it separately when adding css styles -->
         <nav class="navigation shadow">            
-            <div class="logo">
+            <div class="logo wrapper">
                 <img src="images/logo-98.png" alt="logo" class="logo-img">
             </div>
              <!-- linking 3 pages to the menu -->
-            <ul class="atags products-tag">
+            <ul class="atags products-tag wrapper">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html" class="active">Products</a></li>
                 <li><a href="#">About Us</a></li>
@@ -31,7 +32,7 @@
            </nav> 
     </header>
     <!-- Adding each product to the products pages -->
-    <div class="grid hr">
+    <div class="grid hr wrapper">
         <div class="products-header product-order">
             <h3>Order Now</h3>
             <h1>From a Wide Variety of Products</h1>
@@ -75,7 +76,7 @@
             sizes="(max-width: 760px) 85px,
                 (max-width: 1440px) 120px"
             src="images/product3-85.png"
-            alt="icecream-cone-1">
+            alt="image-of-milkshake">
 
             <h2>Milk Shake</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sit eaque odio velit.</p>
@@ -169,13 +170,15 @@
 
     <!-- Adding class of footer-line to remove styles added to the home page footer and add separate styles to products page footer-->
     <hr class="solid">
-    <div class="footer-line">
+    <div class="footer-line bottom-inner">
         <footer>
             <p>&copy; Copyright Dream Cones Ice Cream 2022. All images are taken from <a href="https://unsplash.com/">Unsplash.</a> </p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
         </footer> 
     </div>
 </body>
