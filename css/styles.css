@@ -37,6 +37,10 @@ h3 {
     color: #BD2FD9;
   }
 
+.atags .active {
+    color: #BD2FD9;
+}
+
 nav ul {
     display: block;
     list-style-type: none;
@@ -648,6 +652,7 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
     /* Adding styles to button active state */
     .active {
         background-color: wheat;
+        color: black;
         border-radius: 30px;
         padding: 15px 25px 15px 25px;
     }
