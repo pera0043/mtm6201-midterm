@@ -32,7 +32,7 @@ h3 {
     text-align: center;
 }
 
-/* giving a tags a hover style*/
+/* giving a tags a hover and active style*/
 .navigation a:hover {
     color: #BD2FD9;
   }
@@ -65,7 +65,7 @@ nav ul {
     text-align: left;
 }
 
-/* Aligning header text to the image */
+/* Aligning header text on top of the image */
 .overlay {
     position: absolute;
     top: 8%;
@@ -294,7 +294,7 @@ p {
     color: white;
 }
 
-/* Adding animation to products buttons*/
+/* Adding animation of transform scale to products buttons to make it appear large when hover*/
 .fa-arrow-right {
     transition: 0.5s;
 }
@@ -399,6 +399,7 @@ p {
     transform: scale(1.1); 
 }
 
+/* Adding styles to newsletter input area */
 .newsletter input {
     height: 100%;
     width: 450px;
@@ -451,6 +452,7 @@ hr.solid {
     margin: 0;
 }
 
+/* Adding styles to footer mobile view, making it all align to center */
 footer {
     background-color: #FCF4FF;
     padding-top: 15px;
@@ -471,7 +473,7 @@ footer p {
     background-color: white;
 }
 
-/* styling social media icons on the footer */
+/* styling social media icons on the footer and giving them hover styles */
 .fa {
     padding: 10px;
     font-size: 15px;
@@ -620,8 +622,6 @@ input[type=submit]:hover {
     transform: scale(1.1); 
 }
 
-
-
 /* ---------------------------------------------------------------------------------------------
 Desktop view css starts here. Adding media querie to add styles for minimum width of 760px and over */
 
@@ -661,6 +661,7 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         margin-top: 25px;
     }
 
+    /* Styling header text on top of the image */
     .overlay {
         position: absolute;
         top: 20%;
@@ -679,7 +680,7 @@ Desktop view css starts here. Adding media querie to add styles for minimum widt
         font-size: 40px;
     }
 
-/* Using grid property to structure products section and flex property to style inside of the three columns */
+/* Using grid property to structure products into sections and flex property to style inside of the three columns */
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
